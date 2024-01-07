@@ -1,0 +1,30 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "E-Surve",
+  "short_name": "E-Surve",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://vision-inspector.herokuapp.com/",
+  "background_color": "#000000",
+  "theme_color": "transparent",
+  "description": "",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": "false",
+  "icons": [
+    {
+      "src": "https://vision-inspector.herokuapp.com/static/assets/img/favicon.png",
+      "type": "image/png",
+      "sizes": "30x33"
+    },
+    {
+      "src": "https://vision-inspector.herokuapp.com/static/assets/img/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "url": "https://vision-inspector.herokuapp.com/",
+  "generated": true,
+  "screenshots": []
+}
