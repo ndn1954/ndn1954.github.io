@@ -54,7 +54,7 @@
           <li><a href="#faq">Questions</a></li>
           <li><a href="#contact">Contact Us</a></li>
 
-          <li class="get-started"><a href="#" onclick="openChatbot();">Talk to RIA</a></li>
+          <li class="get-started"><a href="#chatsection">Talk to RIA</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -70,9 +70,8 @@
           <div>
             <p class="textcolor">Simplify insurance.</p>
             <h2>Inspect your insurance. Buy what you need.</h2>
-            <h2>Click on 'Talk to RIA' to chat with the chatbot</h2>
             <nav class="nav-menu d-none d-lg-block">
-              <ul><li class="get-started"><a href="#" onclick="openChatbot();">Talk to RIA</a></li></ul>
+              <ul><li class="get-started"><a href="#chatsection">Talk to RIA</a></li></ul>
             </nav>
             </ul>
           </div>
@@ -134,8 +133,22 @@
       </div>
     </section><!-- End App Features Section -->
 
+    <!-- ======= Chat Section ======= -->
+    <section id="chatsection" class="details section-bg">
+        <div class="section-title">
+          <h2>RIA Bot</h2>
+          <p>Please type your question to start chatting on insurance doubts</p>
+        </div>
+
+        <div class="container">
+          <div id="flat-chat">
+
+          </div>
+        </div>
+    </section><!-- End Chat Section -->
+
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    <section id="faq" class="faq">
       <div class="container">
 
         <div class="section-title">
@@ -198,12 +211,12 @@
     </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>We are web only company, if you have any questions please drop us e-mail</p>
+          <p>If you have any questions please drop us e-mail</p>
         </div>
 
         <div class="row">
@@ -323,6 +336,11 @@
           window.voiceflow.chat.load({
             verify: { projectID: '6571c860a982ea0007e1fcc6' },
             url: 'https://general-runtime.voiceflow.com',
+            render: {
+              mode: 'embedded',
+              target: document.getElementById('flat-chat'),
+            },
+            autostart: false,
             versionID: 'production'
           });
         }
